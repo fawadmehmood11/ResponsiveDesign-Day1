@@ -94,3 +94,92 @@ body {
  width: 100%;
  left: 0;
 }
+
+.about {
+    gap: 4rem;
+    padding: 2rem 0rem;
+ }
+ 
+ .img__wrapper, .aboutme {
+     flex: 1;
+ }
+ 
+ .img__container {
+     max-width: 35rem;
+     width: 100%;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+ }
+ .img__container img {
+     max-width: 100%;
+     border-radius: 50%;
+     aspect-ratio: 1;
+     object-fit: cover;
+ }
+ 
+ .expertise, .cta {
+       flex-wrap: wrap;
+ }
+ 
+ .expertise span {
+     padding: 0.5rem 1rem;
+     border-radius: 1rem;
+     background-color: rgba(245, 179, 66, 0.5);
+     color: white;
+     cursor: pointer;
+ }
+ 
+ .btn{
+     width: max-content;
+     border: 0;
+     background-color: var(--clr--primary);
+     padding: 1rem 1.5rem;
+     border-radius: 10rem;
+     color: white;
+     letter-spacing: 0.1rem;
+     font-weight: 400;
+     text-transform: uppercase;
+     cursor: pointer;
+     transition: 0.5s ease-in-out;
+ }
+ 
+ .hireme {
+      justify-content: flex-end;
+      padding: 2rem 0rem;
+     }
+ 
+ .personal__info {
+         gap: 1.5rem;
+ }
+ 
+ .social__links {
+     justify-content: space-between;
+ }
+ 
+ .social__links a {
+        color: black;
+ }
+ 
+ 
+ 
+ @media screen and (max-width: 768px) {
+  
+     .about {
+         flex-direction: column;
+     }
+ 
+     .aboutme {
+         align-items: center;
+     }
+ 
+     .hireme {
+         justify-content: center;
+         text-align: center;
+     }
+     
+     .aboutme p {
+         text-align: center;
+     }
+ }
+ 
