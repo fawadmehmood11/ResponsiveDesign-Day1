@@ -8,60 +8,26 @@
     box-sizing: border-box;
 }
 
-a{
-    text-decoration: none;
-}
-
-ul{
-    list-style-type: none;
-}
-
-html{
-    font-size: 62.5%;
-}
-
-html, body {
-    /* min-height: 100vh; */
-}
-
-body {
-    font-size: 1.6rem;
+.container__width {
+    font-size: 16px;
     font-family: 'Lato', sans-serif;
     min-height: 100vh;
-}
-
-.container__width {
-    max-width: 90rem;
+    max-width: 900px;
     margin: auto;
 }
 
 .padd__ver {
-    padding: 0 2rem;
+    padding: 0 20px;
 }
 
 .flex {
     display: flex;
+    align-items: center;
+    gap: 20px;
 }
 
 .flex__column {
-    display: flex;
     flex-direction: column;
-}
-
-.justify__flex {
-    justify-content: center;
-}
-
-.align__flex {
-    align-items: center;
-}
-
-.gap {
-    gap: 2rem;
-}
-
-.header {
-    width: 100%;
 }
 
 .nav__list {
@@ -69,11 +35,13 @@ body {
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
+    list-style-type: none;
 }
 
 .nav__item a{
+    text-decoration: none;
     display: inline-block;
-    margin: 1.5rem;
+    margin: 15px;
     color: var(--White);
     position: relative;
 }
@@ -81,11 +49,11 @@ body {
 .nav__item a::after{
  content: '';
  display: block;
- height: 0.1rem;
+ height: 1px;
  left: 50%;
  width: 0;
  position: absolute;
- bottom: -0.5rem;
+ bottom: -5px;
  background: var(--clr--primary);
  transition: width 0.3s ease 0s, left 0.3s ease 0s;
 }
@@ -96,16 +64,15 @@ body {
 }
 
 .about {
-    gap: 4rem;
-    padding: 2rem 0rem;
+    padding: 20px 0px;
  }
  
  .img__wrapper, .aboutme {
      flex: 1;
  }
- 
+
  .img__container {
-     max-width: 35rem;
+     max-width: 350px;
      width: 100%;
      display: flex;
      justify-content: center;
@@ -123,8 +90,8 @@ body {
  }
  
  .expertise span {
-     padding: 0.5rem 1rem;
-     border-radius: 1rem;
+     padding: 5px 10px;
+     border-radius: 10px;
      background-color: rgba(245, 179, 66, 0.5);
      color: white;
      cursor: pointer;
@@ -134,10 +101,10 @@ body {
      width: max-content;
      border: 0;
      background-color: var(--clr--primary);
-     padding: 1rem 1.5rem;
-     border-radius: 10rem;
+     padding: 10px 15px;
+     border-radius: 100px;
      color: white;
-     letter-spacing: 0.1rem;
+     letter-spacing: 1px;
      font-weight: 400;
      text-transform: uppercase;
      cursor: pointer;
@@ -146,40 +113,39 @@ body {
  
  .hireme {
       justify-content: flex-end;
-      padding: 2rem 0rem;
+      padding: 20px 0px;
      }
- 
- .personal__info {
-         gap: 1.5rem;
+
+ .hireme__container, .aboutme {
+    align-items: flex-start;
  }
  
- .social__links {
-     justify-content: space-between;
- }
+.personal__info > div {
+    padding: 5px 0px;
+}
  
  .social__links a {
         color: black;
  }
  
  
- 
  @media screen and (max-width: 768px) {
   
-     .about {
+      .about {
          flex-direction: column;
      }
  
      .aboutme {
+        text-align: center;
          align-items: center;
      }
- 
-     .hireme {
-         justify-content: center;
-         text-align: center;
+
+     .flex {
+        justify-content: center;
      }
-     
-     .aboutme p {
-         text-align: center;
+
+     .personal__info > div {
+        justify-content: flex-start;
      }
  }
  
