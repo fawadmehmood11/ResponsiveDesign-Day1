@@ -1,0 +1,151 @@
+:root {
+    --clr--primary: #f5b342;
+}
+
+*,*::before, *::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.containerWidth {
+    font-size: 16px;
+    font-family: 'Lato', sans-serif;
+    min-height: 100vh;
+    max-width: 900px;
+    margin: auto;
+}
+
+.paddingVertical {
+    padding: 0 20px;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.flexColumn {
+    flex-direction: column;
+}
+
+.navList {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    list-style-type: none;
+}
+
+.navItem a{
+    text-decoration: none;
+    display: inline-block;
+    margin: 15px;
+    color: var(--White);
+    position: relative;
+}
+
+.navItem a::after{
+ content: '';
+ display: block;
+ height: 1px;
+ left: 50%;
+ width: 0;
+ position: absolute;
+ bottom: -5px;
+ background: var(--clr--primary);
+ transition: width 0.3s ease 0s, left 0.3s ease 0s;
+}
+
+.navItem a:hover::after{
+ width: 100%;
+ left: 0;
+}
+
+.about {
+    padding: 20px 0px;
+ }
+ 
+ .imgWrapper, .intro {
+     flex: 1;
+ }
+
+ .imgContainer {
+     max-width: 350px;
+     width: 100%;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+ }
+ .imgContainer img {
+     max-width: 100%;
+     border-radius: 50%;
+     aspect-ratio: 1;
+     object-fit: cover;
+ }
+ 
+ .expertise, .cta {
+       flex-wrap: wrap;
+ }
+ 
+ .expertise span {
+     padding: 5px 10px;
+     border-radius: 10px;
+     background-color: rgba(245, 179, 66, 0.5);
+     color: white;
+     cursor: pointer;
+ }
+ 
+ .btn{
+     width: max-content;
+     border: 0;
+     background-color: var(--clr--primary);
+     padding: 10px 15px;
+     border-radius: 100px;
+     color: white;
+     letter-spacing: 1px;
+     font-weight: 400;
+     text-transform: uppercase;
+     cursor: pointer;
+     transition: 0.5s ease-in-out;
+ }
+ 
+ .contactDetails {
+      justify-content: flex-end;
+      padding: 20px 0px;
+     }
+
+ .contactDetailsContainer, .intro {
+    align-items: flex-start;
+ }
+ 
+.personalInfo > div {
+    padding: 5px 0px;
+}
+ 
+ .socialLinks a {
+        color: black;
+ }
+ 
+ 
+ @media screen and (max-width: 768px) {
+  
+      .about {
+         flex-direction: column;
+     }
+ 
+     .intro {
+        text-align: center;
+         align-items: center;
+     }
+
+     .flex {
+        justify-content: center;
+     }
+
+     .personalInfo > div {
+        justify-content: flex-start;
+     }
+ }
+ 
