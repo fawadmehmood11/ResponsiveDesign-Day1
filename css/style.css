@@ -8,7 +8,7 @@
     box-sizing: border-box;
 }
 
-.container__width {
+.containerWidth {
     font-size: 16px;
     font-family: 'Lato', sans-serif;
     min-height: 100vh;
@@ -16,7 +16,7 @@
     margin: auto;
 }
 
-.padd__ver {
+.paddingVertical {
     padding: 0 20px;
 }
 
@@ -26,11 +26,11 @@
     gap: 20px;
 }
 
-.flex__column {
+.flexColumn {
     flex-direction: column;
 }
 
-.nav__list {
+.navList {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -38,7 +38,7 @@
     list-style-type: none;
 }
 
-.nav__item a{
+.navItem a{
     text-decoration: none;
     display: inline-block;
     margin: 15px;
@@ -46,7 +46,7 @@
     position: relative;
 }
 
-.nav__item a::after{
+.navItem a::after{
  content: '';
  display: block;
  height: 1px;
@@ -58,7 +58,7 @@
  transition: width 0.3s ease 0s, left 0.3s ease 0s;
 }
 
-.nav__item a:hover::after{
+.navItem a:hover::after{
  width: 100%;
  left: 0;
 }
@@ -67,18 +67,18 @@
     padding: 20px 0px;
  }
  
- .img__wrapper, .aboutme {
+ .imgWrapper, .intro {
      flex: 1;
  }
 
- .img__container {
+ .imgContainer {
      max-width: 350px;
      width: 100%;
      display: flex;
      justify-content: center;
      align-items: center;
  }
- .img__container img {
+ .imgContainer img {
      max-width: 100%;
      border-radius: 50%;
      aspect-ratio: 1;
@@ -111,20 +111,20 @@
      transition: 0.5s ease-in-out;
  }
  
- .hireme {
+ .contactDetails {
       justify-content: flex-end;
       padding: 20px 0px;
      }
 
- .hireme__container, .aboutme {
+ .contactDetailsContainer, .intro {
     align-items: flex-start;
  }
  
-.personal__info > div {
+.personalInfo > div {
     padding: 5px 0px;
 }
  
- .social__links a {
+ .socialLinks a {
         color: black;
  }
  
@@ -135,7 +135,7 @@
          flex-direction: column;
      }
  
-     .aboutme {
+     .intro {
         text-align: center;
          align-items: center;
      }
@@ -144,7 +144,7 @@
         justify-content: center;
      }
 
-     .personal__info > div {
+     .personalInfo > div {
         justify-content: flex-start;
      }
  }
